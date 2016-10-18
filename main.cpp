@@ -35,6 +35,7 @@ int main(int argc, char **argv)
     if (!rx || !haystack) {
         usage(stderr);
         fprintf(stderr, "Not enough args\n");
+        return 1;
     }
 
     std::regex regex(rx);
